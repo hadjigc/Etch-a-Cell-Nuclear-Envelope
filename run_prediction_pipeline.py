@@ -42,9 +42,9 @@ if __name__ == '__main__':
     predictions_dir = args.predictions
     model_name = args.model
 
-    stack_dir = "projects/nuclear/resources/images/raw-stacks"
-    scaled_dir = "projects/nuclear/resources/images/scaled-stacks"
-    scaled_predictions_dir = "projects/nuclear/resources/images/scaled-predictions-stacks"
+    stack_dir = params['model']['stack_dir'] #"projects/nuclear/resources/images/raw-stacks"
+    scaled_dir = params['model']['scaled_dir'] #"projects/nuclear/resources/images/scaled-stacks"
+    scaled_predictions_dir = params['model']['scaled_predictions_dir'] #"projects/nuclear/resources/images/scaled-predictions-stacks"
 
     model_dir = params['model']['save_dir']
     aggregation_method = params['aggregation_method']
